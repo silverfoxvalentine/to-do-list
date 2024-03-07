@@ -240,3 +240,11 @@ button {
     gap: 5px;
     align-items: center;
 }
+
+.btnContainer > :nth-child(1), #confirmBtn {
+    background-color: rgb(174, 223, 178);
+}
+
+.btnContainer > :nth-child(2), #discardBtn {
+    background-color: #ff7a7a;
+}
