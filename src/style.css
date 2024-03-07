@@ -172,7 +172,7 @@ button:hover {
 .todo-card {
     padding: 10px;
     display: grid;
-    grid: 1fr / 0.2fr 2fr 1.7fr;
+    grid: 1fr / 1fr 11fr 10fr;
     gap: 5px;
     border: 2px solid black;  
     box-sizing: border-box;
