@@ -26,8 +26,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    border-right: 2px solid black;
-    gap: 2px;
+    border-right:    2px solid black;
+    
 }
 
 #first-column:hover, #second-column:hover {
@@ -38,8 +38,10 @@ body {
     background-color: var(--light);
 }
 
-#chosen {
+#first-column > div > div#chosen {
+    background-color: var(--light);
     border-right: 2px solid var(--light);
+    margin-right: -2px;
 }
 
 
@@ -49,16 +51,25 @@ body {
     border-right:    2px solid black;
     border-top:    2px solid black;
     padding: 15px;
-    margin: -2px;
+    
 }
 
 
 #main  {
     display: flex;
-    gap: 2px;
+    
 }
 
 #categories {
+    background-color: black;
+    border:2px solid black;
+    display: flex;
+    gap:2px;
+    flex-direction: column;
+    margin-right: -2px;
+}
+
+#categories > div {
     background-color: var(--mid); 
 }
 
@@ -66,12 +77,7 @@ body {
     display: flex;
     padding: 10px;
     gap:10px;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    margin-right: -2px;
+
     min-height: 24px;
 }
 
@@ -98,19 +104,21 @@ button:hover {
 }
 
 #projects {
-    background-color: var(--dark);  
+    margin-top: -2px;
+    background-color: black;  
+    display: flex;
+    gap:2px;
+    flex-direction: column;
+    border:2px solid black;
+    margin-right: -2px;
 }
 
 #projects > div {
+    background-color: var(--dark);
     display: flex;
     padding: 10px;
     justify-content: space-between;  
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    margin-right: -2px;
+  
     min-height: 24px;
 }
 
