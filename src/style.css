@@ -1,0 +1,234 @@
+:root {
+    --light: rgb(255, 255, 255);
+    --mid: rgb(224, 230, 244);
+    --dark: rgb(205, 218, 241);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+#app {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body { 
+    display: flex;    
+    font-size: 20px;
+    font-family: myFont, Arial, Helvetica, sans-serif;
+}
+
+#first-column {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-right: 2px solid black;
+    gap: 2px;
+}
+
+#first-column:hover, #second-column:hover {
+    cursor:default;
+}
+
+#chosen, #second-column {
+    background-color: var(--light);
+}
+
+#chosen {
+    border-right: 2px solid var(--light);
+}
+
+
+#second-column {
+    width: 600px;
+    border-bottom: 2px solid black;
+    border-right:    2px solid black;
+    border-top:    2px solid black;
+    padding: 15px;
+    margin: -2px;
+}
+
+
+#main  {
+    display: flex;
+    gap: 2px;
+}
+
+#categories {
+    background-color: var(--mid); 
+}
+
+.category-project {
+    display: flex;
+    padding: 10px;
+    gap:10px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    min-height: 24px;
+}
+
+.category-project > :nth-child(2) {
+    gap: 5px;
+    display: flex;  
+}
+
+
+button:hover {
+    background-color: var(--dark);
+}
+
+#panel {
+    display: flex;  
+    gap: 10px;
+}
+
+#panel > button {
+    height: min-content;
+    padding: 10px;
+    width: 96px;
+    border:2px solid black;
+}
+
+#projects {
+    background-color: var(--dark);  
+}
+
+#projects > div {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;  
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    min-height: 24px;
+}
+
+.Medium >*:nth-child(3) > :nth-child(2) {
+    background-color: lightsalmon;
+    font-size: 16px;
+    text-align: center;
+}
+
+.High >*:nth-child(3) > :nth-child(2) {
+    background-color: #ff7a7a;
+    font-size: 16px;
+    text-align: center;
+}
+
+.Low >*:nth-child(3) > :nth-child(2) {
+    background-color: rgb(174, 223, 178);
+    font-size: 16px;
+    text-align: center;
+}
+
+#projects  > div > input {
+    width: 160px;
+}
+
+
+.project-name {
+    width: 210px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: -2px;
+}
+
+.todo-input > :nth-child(2) {
+    height: 40px;
+}
+
+.todo-input > div > select {
+    max-width: 180px;
+}
+
+.todo-card {
+    padding: 10px;
+    display: grid;
+    grid: 1fr / 0.2fr 2fr 1.7fr;
+    gap: 5px;
+    border: 2px solid black;  
+    box-sizing: border-box;
+    margin: -2px;
+    align-items: center;
+}
+
+.todo-card > :nth-child(2), .todo-card > :nth-child(4) {
+    width: 310px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.completed {
+    background-color: rgb(224, 226, 231);
+    color: rgba(55, 61, 67, 0.775);
+}
+
+input, select {
+    font-size: 16px;
+    font-family: myFont, Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: var(--mid);
+    height: 24px;
+    width: 26px;
+    border: none;
+    font-size: 16px;   
+    
+    font-family: myFont, Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.todo-input > :nth-child(3) {
+    display: flex;
+    gap: 5px; 
+    align-items: center;
+}
+
+.todo-card > :nth-child(3) {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    align-self: flex-start
+}
+
+.todo-card > :nth-child(4) {
+    grid-area:2/2/3/3;
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.todo-card > :nth-child(3) > :nth-child(2){
+    width: 70px;
+}
+
+
+.btnContainer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
