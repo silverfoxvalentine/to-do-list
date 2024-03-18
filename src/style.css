@@ -36,6 +36,7 @@ body {
 
 #chosen, #second-column {
     background-color: var(--light);
+    transition: background-color 300ms ease-in 0s;
 }
 
 #first-column > div > div#chosen {
@@ -89,6 +90,7 @@ body {
 
 button:hover {
     background-color: var(--dark);
+    transition: background-color 300ms ease-in-out 0s;
 }
 
 #panel {
@@ -200,7 +202,7 @@ input, select {
 button {
     background-color: var(--mid);
     height: 24px;
-    width: 26px;
+    width: 24px;
     border: none;
     font-size: 16px;   
     
@@ -247,4 +249,8 @@ button {
 
 .btnContainer > :nth-child(2), #discardBtn {
     background-color: #ff7a7a;
+}
+
+#confirmBtn, #discardBtn {
+ border-radius: 24px;
 }
